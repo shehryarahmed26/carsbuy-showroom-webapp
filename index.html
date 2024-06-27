@@ -9,15 +9,15 @@
 </head>
 <body>
     <nav class="container">
-        <div class="logo animate__animated animate__fadeIn"><h2>Cars</h2></div>
-        <!-- <div class="list">
+        <div class="logo animate__animated animate__fadeIn"><h2 class="logo">Cars</h2></div>
+        <div class="list">
             <ul class=" animate__animated animate__fadeIn">
                 <a href="#"><li>Home</li></a>
                 <a href="#"><li>Toyota</li></a>
                 <a href="#"><li>KIA</li></a>
                 <a href="#"><li>Suzuki</li></a>
                 <a href="#"><li>Honda</li></a>
-            </ul> -->
+            </ul>
         </div>
     </nav>
     <div class="car-section">
@@ -27,8 +27,23 @@
         <h3 class="animate__animated animate__fadeIn">Get into the real world </h3>
         <a href="#" id="buy-now" class="animate__animated animate__fadeIn">Buy Now</a>
     </div>
+    <main>
+        <div class="container main-section">
+            <div class="main-left">
+                <h1 id="car-name">Toyoto Honda</h1>
+                <h2 id="model">2022</h4>
+            </div>
+            <div class="main-right">
+                <i class="fa-solid fa-arrow-left l-arrow" onclick="perv()"></i>
+                <div class="main-imgs">
+                    <img src="" id="carimg" alt="">  
+                </div>
+                <i class="fa-solid fa-arrow-right r-arrow" onclick="next()"></i>
+              </div>
+        </div>
+    </main>
 
-       </div>
+    <script src="https://kit.fontawesome.com/55c89f430b.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 </html>

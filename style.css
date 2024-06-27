@@ -67,9 +67,13 @@ h2 {
     text-align: center;
     letter-spacing: 4px;
 }
-h2::after {
+.logo::after {
     content: 'Buy';
     color: rgb(236, 213, 6);
+}
+.list {
+    display: none;
+    margin-top: 30px;
 }
 
 ul {
@@ -80,8 +84,54 @@ a {
     color: black;
     font-size: 1.1rem;
 }
-/* nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+/* main section start */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.main-left {
+    min-width: 50%;
+}
+.main-right img {
+    width: 100%;
+}
+.main-right {
+    display: flex;
+    align-items: center;
+}
+.main-imgs {
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+}
+/* .civic {
+    transition: 0.5s;
+}
+.civic:hover {
+    transform: translateX(-100%);
 } */
+ .main-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: start;
+ }
+ #car-name {
+    font-size: 3rem;
+    transition: 0.5s ease-in-out;
+}
+#model {
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+}
+#carimg {
+    transition: 0.5s ease-in-out;
+ }
