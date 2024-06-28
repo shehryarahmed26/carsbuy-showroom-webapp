@@ -101,9 +101,9 @@ buynow.addEventListener('click', () => {
     showcardetails(carindex)
   }
 
-
-
   showcardetails(carindex)
+
+      
   let carobj = {
     honda: {
         civic: {
@@ -270,6 +270,7 @@ buynow.addEventListener('click', () => {
   }
   let company = document.getElementById('company')
   let caritem = document.getElementById('caritem')
+  let search = document.getElementById('search')
   company.innerHTML = `<option value="">Select Company </option>`
   caritem.innerHTML = `<option value="">Select Car </option>`
   for (const key in carobj) {
@@ -277,11 +278,23 @@ buynow.addEventListener('click', () => {
   }
   company.addEventListener('change', () => {
     caritem.innerHTML = `<option value="">Select Car </option>`
-    for (const key1 in carobj[company.value]) {
+    for (var key1 in carobj[company.value]) {
       caritem.innerHTML += `<option value="${key1}">${key1.toUpperCase()}</option>`
-      
+        search.addEventListener('click', () => {
+          console.log(caritem.value);
+        })
     }
+
   })
+  let selectedcompany = company.value
+  let selectedcar = caritem.value
+  search.addEventListener('click', () => {
+    console.log(carobj[selectedcompany]);
+    document.write = `${carobj[selectedcompany][selectedcar].carname}`
+  })
+  // search.addEventListener('click', () => {
+  //   console.log(carobj[company.value.caritem.value]);
+  // })
   // leftarrow.addEventListener('click', () => {
   //   let civic = document.querySelector('.civic')
   //   let city = document.querySelector('.city')
