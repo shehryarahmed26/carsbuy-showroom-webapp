@@ -67,7 +67,7 @@ h2 {
     text-align: center;
     letter-spacing: 4px;
 }
-.logo::after {
+h2.logo::after {
     content: 'Buy';
     color: rgb(236, 213, 6);
 }
@@ -78,11 +78,13 @@ h2 {
 
 ul {
     display: flex;
-    gap: 70px;
+    gap: 40px;
 }
 a {
     color: black;
     font-size: 1.1rem;
+    padding: 5px;
+
 }
 nav {
     display: flex;
@@ -90,6 +92,9 @@ nav {
     align-items: center;
 }
 /* main section start */
+main {
+    display: none;
+}
 .main-section {
     display: flex;
     justify-content: space-between;
@@ -123,10 +128,13 @@ nav {
     flex-direction: column;
     /* justify-content: start; */
     align-items: start;
+    /* transform: translateY(-20px); */
  }
  #car-name {
-    font-size: 3rem;
+    font-size: 3.3rem;
+    color: rgba(0, 0, 0, 0.957);
     transition: 0.5s ease-in-out;
+    letter-spacing: 2px;
 }
 #model {
     font-size: 2rem;
@@ -134,4 +142,24 @@ nav {
 }
 #carimg {
     transition: 0.5s ease-in-out;
+ }
+ .main-span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 15px;
+    letter-spacing: 2px;
+ }
+ select  {
+    border: none;
+    font-size: 1.1rem;
+
+ }
+ select:focus, select:active {
+    border: none;
+ }
+ #search {
+    border: 1px solid grey;
+    /* padding: 5px; */
+    border-radius: 4px;
  }

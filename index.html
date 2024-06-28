@@ -13,10 +13,14 @@
         <div class="list">
             <ul class=" animate__animated animate__fadeIn">
                 <a href="#"><li>Home</li></a>
-                <a href="#"><li>Toyota</li></a>
-                <a href="#"><li>KIA</li></a>
-                <a href="#"><li>Suzuki</li></a>
-                <a href="#"><li>Honda</li></a>
+                <a href="#"><li>All-Cars</li></a>
+                <a href="#"><li><select name="company" id="company">
+                    <!-- <option value="">Select Company</option> -->
+                </select></li></a>
+                <a href="#"><li><select name="caritem" id="caritem">
+                    <!-- <option value="">Select Car</option> -->
+                </select></li></a>
+                <a href="#" id="search"><li>Search</li></a>
             </ul>
         </div>
     </nav>
@@ -31,7 +35,11 @@
         <div class="container main-section">
             <div class="main-left">
                 <h1 id="car-name">Toyoto Honda</h1>
-                <h2 id="model">2022</h4>
+                <span class="main-span" id="speed"></span>
+                <span class="main-span" id="engine"></span>
+                <span class="main-span" id="petrol"></span>
+                <span class="main-span" id="price"></span>
+
             </div>
             <div class="main-right">
                 <i class="fa-solid fa-arrow-left l-arrow" onclick="perv()"></i>
