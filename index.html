@@ -12,15 +12,15 @@
         <div class="logo animate__animated animate__fadeIn"><h2 class="logo">Cars</h2></div>
         <div class="list">
             <ul class=" animate__animated animate__fadeIn">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>All-Cars</li></a>
+                <a href="#" id="home" onclick="homepage()"><li>Home</li></a>
+                <a href="#" onclick="carshowroompage()"><li>All-Cars</li></a>
                 <a href="#"><li><select name="company" id="company">
                     <!-- <option value="">Select Company</option> -->
                 </select></li></a>
                 <a href="#"><li><select name="caritem" id="caritem">
                     <!-- <option value="">Select Car</option> -->
                 </select></li></a>
-                <a href="#" id="search"><li>Search</li></a>
+                <a href="#" id="search" onclick="herosectionpage()"><li>Search</li></a>
             </ul>
         </div>
     </nav>
@@ -28,7 +28,7 @@
      <img src="Assets/cars-main.png" class="animate__animated animate__backInUp" alt="">
     </div>
     <div class="intro-subtitle">
-        <h3 class="animate__animated animate__fadeIn">Get into the real world </h3>
+        <h3 class="animate__animated animate__fadeIn intro-h3">Get into the real world </h3>
         <a href="#" id="buy-now" class="animate__animated animate__fadeIn">Buy Now</a>
     </div>
     <main>
@@ -50,6 +50,16 @@
               </div>
         </div>
     </main>
+    <div class="hero-section">
+        
+    </div>
+    <div class="car-showroom" id="showroom">
+        <div class="card">
+            <img src="" alt="">
+            <h2></h2>
+
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/55c89f430b.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>

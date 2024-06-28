@@ -84,10 +84,10 @@ buynow.addEventListener('click', () => {
   carindex = 0;
   function showcardetails (index) {
     document.getElementById('car-name').innerHTML = cardata[index].carname
-    document.getElementById('speed').innerHTML = `<img src="./Assets/icons/speed-meter.png" > <span>${cardata[index].speed} </span>`
-    document.getElementById('engine').innerHTML = `<img src="./Assets/icons/engine.png" > <span>${cardata[index].engine} </span> `
-    document.getElementById('petrol').innerHTML = `<img src="./Assets/icons/full-tank.png" > <span>${cardata[index].Petrol} </span> `
-    document.getElementById('price').innerHTML = `<img src="./Assets/icons/price.png" > <span>${cardata[index].Price} </span> `
+    document.getElementById('speed').innerHTML = `<img src="./Assets/icons/speed-meter.png" class="icon" > <span>${cardata[index].speed} </span>`
+    document.getElementById('engine').innerHTML = `<img src="./Assets/icons/engine.png" class="icon" > <span>${cardata[index].engine} </span> `
+    document.getElementById('petrol').innerHTML = `<img src="./Assets/icons/full-tank.png" class="icon" > <span>${cardata[index].Petrol} </span> `
+    document.getElementById('price').innerHTML = `<img src="./Assets/icons/price.png" class="icon" > <span>${cardata[index].Price} </span> `
     document.getElementById('carimg').src = cardata[index].img
   }
   
@@ -111,160 +111,160 @@ buynow.addEventListener('click', () => {
             speed: `180/62000`,
             engine: `Smart Stream 2.5 Mpi`,
             Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Price: '1 Crore',
+            img: 'Assets/cars/honda/civic.jpg'
         },
         city: {
             carname: 'Honda City',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `160/60000`,
+            engine: `Smart Stream 2.3 Mpi`,
+            Petrol: '70 Ltr.',
+            Price: '50 Lakh',
+            img: 'Assets/cars/honda/city.jpg'
         },
         hybrid: {
             carname: 'Honda Hybrid',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
+            speed: `150/62000`,
+            engine: `Smart soft 2.5 Mpi`,
+            Petrol: '70 Ltr.',
             Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            img: 'Assets/cars/honda/hybrid.webp'
         },
         brv: {
             carname: 'Honda Br-v',
             speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            engine: `Smart Stream 2.2 Mpi`,
+            Petrol: '50 Ltr.',
+            Price: '95 Lakh',
+            img: 'Assets/cars/honda/br-v.webp'
         },
     },
     kia: {
         rio: {
             carname: 'Kia Rio',
-            speed: `180/62000`,
+            speed: `135/62000`,
             engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Petrol: '65 Ltr.',
+            Price: '58 Lakh',
+            img: 'Assets/cars/kia/Rio.jpg'
         },
         sorento: {
             carname: 'Kia Sorento',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `165/62000`,
+            engine: `Smart Stream 2.2 Mpi`,
+            Petrol: '45 Ltr.',
+            Price: '75 Lakh',
+            img: 'Assets/cars/kia/sorento.jpg'
         },
         sportage: {
             carname: 'Kia Sportage',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `175/62000`,
+            engine: `Smart Stream 2.3 Mpi`,
+            Petrol: '58 Ltr.',
+            Price: '95 Lakh',
+            img: 'Assets/cars/kia/Sportage.png'
         },
         stinger: {
             carname: 'Kia Stinger',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `170/62000`,
+            engine: `Smart Stream 2.1 Mpi`,
+            Petrol: '80 Ltr.',
+            Price: '67 Lakh',
+            img: 'Assets/cars/kia/Stinger.webp'
         },
     },
     suzuki: {
         mehran: {
             carname: 'Suzuki Mehran',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `130/62000`,
+            engine: `Smart Stream 2.1 Mpi`,
+            Petrol: '40 Ltr.',
+            Price: '7 Lakh',
+            img: 'Assets/cars/suzuki/mehran.jpg'
         },
         alto: {
             carname: 'Suzuki Alto',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `140/62000`,
+            engine: `Smart Stream 2.2 Mpi`,
+            Petrol: '70 Ltr.',
+            Price: '15 Lakh',
+            img: 'Assets/cars/suzuki/Alto.jpg'
         },
         swift: {
             carname: 'Suzuki Swift',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `155/62000`,
+            engine: `Smart Stream 2.2 Mpi`,
+            Petrol: '55 Ltr.',
+            Price: '45 Lakh',
+            img: 'Assets/cars/suzuki/swift.webp'
         },
         carry: {
             carname: 'Suzuki Carry',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
+            speed: `120/62000`,
+            engine: `Smart Stream 2.1 Mpi`,
             Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Price: '50 Lakh',
+            img: 'Assets/cars/kia/Carry.jpg'
         },
     },
     toyota: {
         corolla: {
             carname: 'Toyota Corolla',
-            speed: `180/62000`,
+            speed: `170/62000`,
             engine: `Smart Stream 2.5 Mpi`,
             Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Price: '85 Lakh',
+            img: 'Assets/cars/toyota/Corolla.png'
         },
         fortuner: {
             carname: 'Toyota Fotuner',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `190/62000`,
+            engine: `Smart Stream 2.9 Mpi`,
+            Petrol: '30 Ltr.',
+            Price: '1.8 Crore',
+            img: 'Assets/cars/toyota/Fortuner.png'
         },
         camry: {
             carname: 'Toyota Camry',
-            speed: `180/62000`,
+            speed: `170/62000`,
             engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Petrol: '50 Ltr.',
+            Price: '76 Lakh',
+            img: 'Assets/cars/toyota/Camry.jpg'
         },
         prius: {
             carname: 'Toyota Prius',
-            speed: `180/62000`,
-            engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            speed: `170/62000`,
+            engine: `Smart Stream 2.2 Mpi`,
+            Petrol: '50 Ltr.',
+            Price: '60 Lakh',
+            img: 'Assets/cars/toyota/Prius.webp'
         },
     },
     hyundai: {
         sonata: {
             carname: 'Hyundai Sonata',
-            speed: `180/62000`,
+            speed: `165/62000`,
             engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Petrol: '48 Ltr.',
+            Price: '88 Lakh',
+            img: 'Assets/cars/hyundai/Sonata.jpg'
         },
         tucson: {
             carname: 'Hyundai Tucson',
-            speed: `180/62000`,
+            speed: `190/62000`,
             engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
+            Petrol: '30 Ltr.',
+            Price: '1.1 Crore',
             img: 'Assets/cars/hyundai/tucson.webp'
         },
         santafe: {
             carname: 'Hyundai Santafe',
-            speed: `180/62000`,
+            speed: `160/62000`,
             engine: `Smart Stream 2.5 Mpi`,
-            Petrol: '60 Ltr.',
-            Price: '80 Lakh',
-            img: 'Assets/cars/hyundai/tucson.webp'
+            Petrol: '40 Ltr.',
+            Price: '72 Lakh',
+            img: 'Assets/cars/hyundai/SantaFe.png'
         },
     },
   }
@@ -286,30 +286,43 @@ buynow.addEventListener('click', () => {
     }
 
   })
-  let selectedcompany = company.value
-  let selectedcar = caritem.value
-  search.addEventListener('click', () => {
-    console.log(carobj[selectedcompany]);
-    document.write = `${carobj[selectedcompany][selectedcar].carname}`
-  })
+  let herosection = document.querySelector('.hero-section')
   // search.addEventListener('click', () => {
-  //   console.log(carobj[company.value.caritem.value]);
+    function herosectionpage() {
+      main.style.display = 'none'
+    let selectedcompany = company.value
+    let selectedcar = caritem.value
+    let cardetails = carobj[selectedcompany][selectedcar]
+    console.log(cardetails.img);
+    herosection.innerHTML = `<img src="${cardetails.img}" class="hero-img" alt="">
+        <h2 id="hero-2">${cardetails.carname}</h2>
+        <div class="specs">
+         <img src="./Assets/icons/engine.png" > <span>${cardetails.price} </span>
+         <img src="./Assets/icons/speed-meter.png" > <span>${cardetails.speed} </span>
+         <img src="./Assets/icons/full-tank.png" > <span>${cardetails.Petrol} </span>
+         <img src="./Assets/icons/price.png" > <span>${cardetails.Price} </span>
+        </div>` 
+       // console.log(cardetails);
+      }
   // })
-  // leftarrow.addEventListener('click', () => {
-  //   let civic = document.querySelector('.civic')
-  //   let city = document.querySelector('.city')
-  //   let hybrid = document.querySelector('.hybrid')
-  //   civic.style.transform = 'translateX(-100%)';
-  //   city.style.transform = 'translateX(-100%)';
-  //   hybrid.style.transform = 'translateX(-100%)';
-  //   // console.log(mainimgs);
-  // })
-  // rightarrow.addEventListener('click', () => {
-  //   let civic = document.querySelector('.civic')
-  //   let city = document.querySelector('.city')
-  //   let hybrid = document.querySelector('.hybrid')
-  //   civic.style.transform = 'translateX(100%)';
-  //   city.style.transform = 'translateX(100%)';
-  //   hybrid.style.transform = 'translateX(100%)';
-  //   // console.log(mainimgs);
-  // })
+  let home = document.getElementById('home')
+  function homepage() {
+    herosection.style.display = 'none'
+    main.style.display = 'block'
+  }
+  let carshowroom = document.getElementById('showroom')
+// function carshowroompage () {
+//   main.style.display = 'none'
+//   for (key in carobj) {
+
+//     for (key1 in carobj[key]) {
+//       carshowroom.innerHTML += `
+//       <div class="card">
+//             <img src="${key1.img}" alt="">
+//             <h2>${key1.carname}</h2>
+
+//         </div>
+//       `
+//     }
+//   }
+// }

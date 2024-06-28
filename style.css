@@ -163,3 +163,79 @@ main {
     /* padding: 5px; */
     border-radius: 4px;
  }
+ .hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-height: 60vh;
+ }
+ .hero-section .hero-img {
+    width: 600px;
+ }
+ .specs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(-50px);
+ }
+ #hero-2 {
+    transform: translateY(-70px);
+ }
+ @media (max-width: 600px) { 
+    .logo {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+    .intro-h3 {
+        font-size: 1rem;
+        letter-spacing: 4px;
+        padding: 10px;
+    }
+    ul a {
+        font-size: 0.7rem;
+    }
+    select {
+        font-size: 0.7rem;
+
+    }
+    ul a:nth-child(1) {
+        display: none;
+    }
+    ul a:nth-child(2) {
+        display: none;
+    }
+    ul {
+        gap: 5px;
+    }
+    nav {
+        padding-inline: 20px;
+        flex-direction: column;
+        /* margin-right: 20px;
+        margin: 0; */
+    }
+    .list {
+        padding-inline: 20px;
+        margin: 0;
+    }
+    #car-name {
+        font-size: 2rem;
+    }
+    .icon {
+        width: 20px;
+    }
+    #petrol, #price, #engine, #speed {
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+    }
+    .main-left {
+        max-width: 30%;
+    }
+    .main-right {
+        min-width: 60%;
+    }
+    .main-section {
+        padding-inline: 15px;
+    }
+ }
