@@ -185,13 +185,15 @@ main {
  }
  @media (max-width: 600px) { 
     .logo {
-        font-size: 1.6rem;
-        margin-bottom: 30px;
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
     .intro-h3 {
         font-size: 1rem;
         letter-spacing: 4px;
         padding: 10px;
+        margin-block: 30px;
     }
     ul a {
         font-size: 0.7rem;
@@ -221,21 +223,53 @@ main {
     }
     #car-name {
         font-size: 2rem;
+        text-align: center;
+        margin-inline: auto;
     }
     .icon {
-        width: 20px;
+        width: 18px;
     }
     #petrol, #price, #engine, #speed {
         font-size: 0.8rem;
         margin-bottom: 2px;
     }
     .main-left {
-        max-width: 30%;
+        /* max-width: 30%; */
+        text-align: center;
     }
     .main-right {
         min-width: 60%;
     }
     .main-section {
         padding-inline: 15px;
+        flex-direction: column-reverse;
     }
+    .main-specs {
+        display: flex;
+        font-size: 0.4rem;
+        max-width: 80%;
+        /* padding-inline: 10px; */
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+    }
+    .main-imgs img {
+        width: 260px;
+        /* min-width: 260px; */
+    }
+    .main-right {
+        gap: 10px;
+    }
+    .hero-img {
+        max-width: 350px;
+        margin-inline: auto;
+    }
+    .specs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
  }

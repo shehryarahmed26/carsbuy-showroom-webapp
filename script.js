@@ -297,7 +297,7 @@ buynow.addEventListener('click', () => {
     herosection.innerHTML = `<img src="${cardetails.img}" class="hero-img" alt="">
         <h2 id="hero-2">${cardetails.carname}</h2>
         <div class="specs">
-         <img src="./Assets/icons/engine.png" > <span>${cardetails.price} </span>
+         <img src="./Assets/icons/engine.png" class="icon" > <span>${cardetails.engine} </span>
          <img src="./Assets/icons/speed-meter.png" > <span>${cardetails.speed} </span>
          <img src="./Assets/icons/full-tank.png" > <span>${cardetails.Petrol} </span>
          <img src="./Assets/icons/price.png" > <span>${cardetails.Price} </span>
