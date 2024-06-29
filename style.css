@@ -263,12 +263,22 @@ main {
         gap: 10px;
     }
     .hero-img {
+        /* margin-top: 20px; */
         max-width: 350px;
         margin-inline: auto;
+        transform: translateY(-65px);
+        margin-bottom: 15px;
+    }
+    #hero-2 {
+        transform: translateY(-125px);
+        font-size: 1.9rem;
     }
     .specs {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        transform: translateY(-110px);
+        padding-inline: 50px;
+        font-size: 0.8rem;
     }
     
     

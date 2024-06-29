@@ -298,9 +298,9 @@ buynow.addEventListener('click', () => {
         <h2 id="hero-2">${cardetails.carname}</h2>
         <div class="specs">
          <img src="./Assets/icons/engine.png" class="icon" > <span>${cardetails.engine} </span>
-         <img src="./Assets/icons/speed-meter.png" > <span>${cardetails.speed} </span>
-         <img src="./Assets/icons/full-tank.png" > <span>${cardetails.Petrol} </span>
-         <img src="./Assets/icons/price.png" > <span>${cardetails.Price} </span>
+         <img src="./Assets/icons/speed-meter.png" class="icon" > <span>${cardetails.speed} </span>
+         <img src="./Assets/icons/full-tank.png" class="icon" > <span>${cardetails.Petrol} </span>
+         <img src="./Assets/icons/price.png" class="icon" >  <span>${cardetails.Price} </span>
         </div>` 
        // console.log(cardetails);
       }
